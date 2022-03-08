@@ -133,21 +133,21 @@ Run the [az functionapp create](/cli/azure/functionapp#az_functionapp_create) co
 
 # [C\#](#tab/csharp)  
 ```azurecli
-az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location <CUSTOM_LOCATION_ID> --storage-account <STORAGE_NAME> --functions-version 3 --runtime dotnet 
+az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location $customLocationId --storage-account <STORAGE_NAME> --functions-version 3 --runtime dotnet 
 ```
 
 # [JavaScript](#tab/nodejs)  
 ```azurecli
-az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location <CUSTOM_LOCATION_ID> --storage-account <STORAGE_NAME> --functions-version 3 --runtime node --runtime-version 12
+az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location $customLocationId --storage-account <STORAGE_NAME> --functions-version 3 --runtime node --runtime-version 12
 ```
 
 # [Python](#tab/python)  
 ```azurecli
-az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location <CUSTOM_LOCATION_ID> --storage-account <STORAGE_NAME> --functions-version 3 --runtime python --runtime-version 3.8
+az functionapp create --resource-group MyResourceGroup --name <APP_NAME> --custom-location $customLocationId --storage-account <STORAGE_NAME> --functions-version 3 --runtime python --runtime-version 3.8
 ```
 ---
 
-In this example, replace `<CUSTOM_LOCATION_ID>` with the ID of the custom location you determined for the App Service Kubernetes environment. Also, replace `<STORAGE_NAME>` with the name of the account you used in the previous step, and replace `<APP_NAME>` with a globally unique name appropriate to you. 
+Also, replace `<STORAGE_NAME>` with the name of the account you used in the previous step, and replace `<APP_NAME>` with a globally unique name appropriate to you. 
 
 [!INCLUDE [functions-publish-project-cli](../../includes/functions-publish-project-cli.md)]
 
